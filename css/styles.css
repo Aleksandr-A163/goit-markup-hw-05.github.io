@@ -93,8 +93,6 @@ button {
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	/* align-items: center;
-	justify-content: center; */
 }
 
 .header {
@@ -161,15 +159,17 @@ button {
 	width: 100%;
 	border: 2px solid var(--accent-color);
 	border-radius: 2px;
+	background-color: var(--accent-color);
 }
 
 .contacts-list .link {
 	color: var(--second-text-color);
 }
 
-.contacts-list .link:hover,
-.contacts-list .link:focus {
+.contacts-item .link:hover,
+.contacts-item .link:focus {
 	color: var(--accent-color);
+	transition: var(--duration) var(--cubic-bezier);
 }
 
 .contacts-item + .contacts-item {
@@ -179,7 +179,6 @@ button {
 .contacts-list .link .icon {
 	margin-right: 10px;
 	fill: currentColor;
-	transition: fill var(--duration) var(--cubic-bezier);
 }
 
 .link {
@@ -528,6 +527,7 @@ button {
 .footer-address .footer-link:hover,
 .footer-address .footer-link:focus {
 	color: var(--accent-color);
+	transition: var(--duration) var(--cubic-bezier);
 }
 
 .member-social-links-thumb {
@@ -598,6 +598,7 @@ button {
 	background-color: var(--accent-color);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	color: var(--main-bg-color);
+	transition: var(--duration) var(--cubic-bezier);
 }
 .portfolio-list {
 	display: flex;
