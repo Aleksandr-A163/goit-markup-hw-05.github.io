@@ -146,6 +146,10 @@ button {
 	color: var(--accent-color);
 }
 
+.nav-main .link {
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .nav-main .link:hover,
 .nav-main .link:focus {
 	color: var(--accent-color);
@@ -164,12 +168,12 @@ button {
 
 .contacts-list .link {
 	color: var(--second-text-color);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-item .link:hover,
 .contacts-item .link:focus {
 	color: var(--accent-color);
-	transition: var(--duration) var(--cubic-bezier);
 }
 
 .contacts-item + .contacts-item {
@@ -522,12 +526,12 @@ button {
 
 .footer-address .footer-link {
 	color: rgba(255, 255, 255, 0.6);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-address .footer-link:hover,
 .footer-address .footer-link:focus {
 	color: var(--accent-color);
-	transition: var(--duration) var(--cubic-bezier);
 }
 
 .member-social-links-thumb {
@@ -591,6 +595,7 @@ button {
 	letter-spacing: 0.03em;
 	background-color: var(--second-bg-color);
 	color: var(--main-text-color);
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button.secondary:hover,
@@ -598,7 +603,6 @@ button {
 	background-color: var(--accent-color);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 	color: var(--main-bg-color);
-	transition: var(--duration) var(--cubic-bezier);
 }
 .portfolio-list {
 	display: flex;
